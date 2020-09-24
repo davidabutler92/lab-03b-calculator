@@ -1,15 +1,32 @@
-const addInput1 = document.getElementById('input-1');
-const addInput2 = document.getElementById('input-2');
+const addNum1 = document.getElementById('addInput-1');
+const addNum2 = document.getElementById('addInput-2');
 const addButton = document.getElementById('add-btn');
-const addResults = document.getElementById('add-results');
+const addTextResults = document.getElementById('add-results');
+
+const subNum1 = document.getElementById('subInput-1');
+const subNum2 = document.getElementById('subInput-2');
+const subButton = document.getElementById('sub-btn');
+const subTextResults = document.getElementById('sub-results');
+
+const add = (num1, num2) => {
+  let add = num1 + num2;
+  return  add;
+}
+
+const subtract = (num1, num2) => {
+  let sub = num1 - num2;
+  return  sub;
+}
 
 addButton.addEventListener('click', () => {
- const value1 = addInput1.value;
- const value2 = addInput1.value;
- const value1AsNumber = Number(value1);
- const value2AsNumber = Number(value1);
- const sum = value1AsNumber + value2AsNumber;
- addResults.textContent = sum;
+  const results = add(addNum1.valueAsNumber, addNum2.valueAsNumber);
+  subTextResults.textContent = results;
+  console.log(results);
 });
 
-console.log(addInput1, addInput2, addButton);
+subButton.addEventListener('click', () => {
+  const results = subtract(subNum1.valueAsNumber, subNum2.valueAsNumber);
+  subTextResults.textContent = results;
+  console.log(results);
+});
+

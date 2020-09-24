@@ -128,3 +128,7 @@ input, button {
     }
 
   }
+
+  button {
+      width: 5em;
+  }
