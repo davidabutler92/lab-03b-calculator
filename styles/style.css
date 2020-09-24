@@ -1,10 +1,12 @@
 
-body {
-    --color1: #ffffff;
-    --color2: #ffffff;
-    --color3: #ffffff;
-    --color4: #ffffff;
-    --color5: #ffffff;
+
+body , html {
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+  }
 
     /* https://coolors.co/generate and click export -> scss to get the colors to copy and paste below*/
     /* --color1: hsla(349, 69%, 76%, 1);
@@ -131,4 +133,16 @@ input, button {
 
   button {
       width: 5em;
+  }
+
+  input {
+      width: 4em;
+  }
+
+  section {
+      margin-top: 20px;
+  }
+
+  div {
+      margin-top: 10px;
   }
