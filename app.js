@@ -1,9 +1,12 @@
-import {addClickHandler} from './clickHandler.js';
+import {addClickHandler, subClickHandler, multClickHandler} from './clickHandler.js';
 
 const addButton = document.getElementById('add-btn');
-
+const subButton = document.getElementById('sub-btn');
+const multButton = document.getElementById('mult-btn');
 
 addButton.addEventListener('click', addClickHandler);
+subButton.addEventListener('click', subClickHandler);
+multButton.addEventListener('click', multClickHandler);
 
 
 
@@ -29,9 +32,6 @@ addButton.addEventListener('click', addClickHandler);
 // const subNum1 = document.getElementById('subInput-1');
 // const subNum2 = document.getElementById('subInput-2');
 // const subTextResults = document.getElementById('sub-results');
-// const subButton = document.getElementById('sub-btn');
+// 
 
-// const multNum1 = document.getElementById('multInput-1');
-// const multNum2 = document.getElementById('multInput-2');
-// const multButton = document.getElementById('mult-btn');
-// const multTextResults = document.getElementById('mult-results');
+// 
