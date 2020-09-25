@@ -1,11 +1,11 @@
-import {add, subtract, multiply} from './mathUtils.js';
+import {add, subtract, multiply, divide} from './mathUtils.js';
 
-//User input and DOM elements 
+//User input for add
 const addNum1 = document.getElementById('addInput-1');      
 const addNum2 = document.getElementById('addInput-2');
 const addTextResults = document.getElementById('add-results');
 
-//Add click handler function
+//Addition click handler function
 export const addClickHandler = () => {
   const addValue1 = addNum1.valueAsNumber;
   const addValue2 = addNum2.valueAsNumber;
@@ -18,6 +18,7 @@ const subNum1 = document.getElementById('subInput-1');
 const subNum2 = document.getElementById('subInput-2');
 const subTextResults = document.getElementById('sub-results');
 
+//Subtraction click handler
 export const subClickHandler = () => {
   const subValue1 = subNum1.valueAsNumber;
   const subValue2 = subNum2.valueAsNumber;
@@ -36,4 +37,17 @@ export const multClickHandler = () => {
   const multValue2 = multNum2.valueAsNumber;
   const product = multiply(multValue1, multValue2);
   multTextResults.textContent = product;
+}
+
+//User input for divide 
+const divNum1 = document.getElementById('divInput-1');
+const divNum2 = document.getElementById('divInput-2');
+const divTextResults = document.getElementById('div-results');
+
+//Division click handler
+export const divClickHandler = () => {
+  const divValue1 = divNum1.valueAsNumber;
+  const divValue2 = divNum2.valueAsNumber;
+  const quotient = divide(divValue1, divValue2);
+  divTextResults.textContent = quotient;
 }

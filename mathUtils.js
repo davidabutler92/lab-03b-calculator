@@ -14,3 +14,8 @@ export const multiply = (num1, num2) => {
   return  mult;
 }
 
+export const divide = (num1, num2) => {
+  let div = num1 / num2;
+  return div;
+}
+
